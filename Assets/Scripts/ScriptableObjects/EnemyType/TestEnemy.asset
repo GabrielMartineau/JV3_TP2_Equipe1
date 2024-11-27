@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: TestEnemy
   m_EditorClassIdentifier: 
   speed: 0.2
+  maxHP: 0
+  moveTowardsObjective: 1
+  moveOnAxis: 1

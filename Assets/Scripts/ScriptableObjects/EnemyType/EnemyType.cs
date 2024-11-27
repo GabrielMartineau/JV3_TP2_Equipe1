@@ -6,4 +6,8 @@ using UnityEngine;
 public class EnemyType : ScriptableObject
 {
     public float speed;
+    public int maxHP;
+
+    public bool moveTowardsObjective;
+    public bool moveOnAxis;
 }
