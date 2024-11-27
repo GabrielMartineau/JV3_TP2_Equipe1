@@ -8,6 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test Scenes/SceneDeBase.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/Test-Interaction.unity
+    guid: 5ea80bb2f3414f44e93b2a6360c25637
+  - enabled: 1
+    path: Assets/Scenes/Accueil.unity
+    guid: 7396a59de0057014face77f599892f25
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: b881b1c0a914e5a42b55d860505c8d5e
+  - enabled: 1
+    path: Assets/Scenes/Niveau1.unity
+    guid: 8f0dd7f5d431a13469a3acca7a6cec94
+  - enabled: 1
+    path: Assets/Scenes/Niveau2.unity
+    guid: 406866ab55a4b2d4394f1a7c33226f23
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 367a501fca6f82c4f9105b9e4673ca09,
       type: 2}
