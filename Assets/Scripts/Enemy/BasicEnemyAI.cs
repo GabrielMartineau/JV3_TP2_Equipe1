@@ -142,4 +142,23 @@ public class BasicEnemyAI : MonoBehaviour
     {
         balloonVector = Vector3.Cross(FindPath(), Vector3.Normalize(new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f))));
     }
+
+    /// <summary>
+    /// OnTriggerEnter is called when the Collider other enters the trigger.
+    /// </summary>
+    /// <param name="other">The other Collider involved in this collision.</param>
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Bullet"))
+        {
+            hP--;
+            other.gameObject.GetComponent<Bullet>().KillBullet();
+            if(hP <= 0) KillEnemy();
+        }
+    }
+
+    private void KillEnemy()
+    {
+        Destroy(gameObject);
+    }
 }
