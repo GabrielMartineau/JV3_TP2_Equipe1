@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
-  m_Name: TestEnemy
+  m_Name: Virus
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: 0.375
   maxHP: 5
   aiMoveType: 2

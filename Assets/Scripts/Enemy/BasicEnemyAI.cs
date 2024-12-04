@@ -7,7 +7,7 @@ public class BasicEnemyAI : MonoBehaviour
     [SerializeField] private GameObject objective;
     [SerializeField] private EnemyType enemy;
 
-    public int hP;
+    private int hP;
 
     private Vector3 axis1;
     private Vector3 axis2;
