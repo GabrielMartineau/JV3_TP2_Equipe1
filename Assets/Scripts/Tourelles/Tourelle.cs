@@ -20,7 +20,7 @@ public class Tourelle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enemiesInRange[0] == null)
+        if(enemiesInRange.Count > 0 && enemiesInRange[0] == null)
         {
             enemiesInRange.Remove(enemiesInRange[0]);
         }
