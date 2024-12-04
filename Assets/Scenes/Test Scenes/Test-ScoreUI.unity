@@ -1205,12 +1205,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358807813}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.61519164, y: -0.9869796, z: 0.16722031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1076653469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &462259417
 GameObject:
@@ -1620,7 +1620,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 503255234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 165671519}
+        m_TargetAssemblyTypeName: MenuTourellesInteraction, Assembly-CSharp
+        m_MethodName: SelectionMenuTourelles
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4567546118481147476, guid: e5c6c4c5278ab69438b8a0a8e6fb6050,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &503255234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2790,7 +2803,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1033614307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 165671519}
+        m_TargetAssemblyTypeName: MenuTourellesInteraction, Assembly-CSharp
+        m_MethodName: SelectionMenuTourelles
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4567546118481147476, guid: c1b46e510dcfdcb4ead0a9bf71388b8c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1033614307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2859,6 +2885,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 165671518}
+  - {fileID: 358807815}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094073752
@@ -5246,7 +5273,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 64287480}
   - {fileID: 475163720}
-  - {fileID: 358807815}
   - {fileID: 1877353778}
   - {fileID: 1585867854}
   - {fileID: 1744510955}
