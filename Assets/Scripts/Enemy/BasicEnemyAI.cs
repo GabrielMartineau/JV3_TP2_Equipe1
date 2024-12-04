@@ -147,12 +147,11 @@ public class BasicEnemyAI : MonoBehaviour
     /// OnTriggerEnter is called when the Collider other enters the trigger.
     /// </summary>
     /// <param name="other">The other Collider involved in this collision.</param>
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Bullet"))
         {
             hP--;
-            other.gameObject.GetComponent<Bullet>().KillBullet();
             if(hP <= 0) KillEnemy();
         }
     }

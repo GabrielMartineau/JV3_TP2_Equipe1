@@ -11,18 +11,18 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(trackedEnemy != null) path = FindPath();
+        if(trackedEnemy != null) path = FindPath(); else Invoke("KillBullet", 5f);
         gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position + path * Time.deltaTime);
-
-        if(Vector3.Distance(gameObject.transform.position, gameObject.transform.parent.position) >= 5f)
-        {
-            KillBullet();
-        }
     }
 
     private Vector3 FindPath()
     {
         return Vector3.Normalize(trackedEnemy.transform.position - gameObject.transform.position);
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        KillBullet();
     }
 
     public void KillBullet()
