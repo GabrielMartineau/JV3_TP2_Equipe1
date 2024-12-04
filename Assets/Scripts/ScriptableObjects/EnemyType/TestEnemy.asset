@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
   m_Name: TestEnemy
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: 0.1
   maxHP: 0
-  moveTowardsObjective: 1
-  moveOnAxis: 1
+  aiMoveType: 3

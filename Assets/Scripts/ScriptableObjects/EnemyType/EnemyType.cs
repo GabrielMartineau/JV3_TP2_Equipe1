@@ -8,6 +8,5 @@ public class EnemyType : ScriptableObject
     public float speed;
     public int maxHP;
 
-    public bool moveTowardsObjective;
-    public bool moveOnAxis;
+    public AIMoveType aiMoveType;
 }
