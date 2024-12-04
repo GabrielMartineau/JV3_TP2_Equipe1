@@ -1205,12 +1205,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358807813}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.61519164, y: -0.9869796, z: 0.16722031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1076653469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &462259417
 GameObject:
@@ -1620,7 +1620,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 503255234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 165671519}
+        m_TargetAssemblyTypeName: MenuTourellesInteraction, Assembly-CSharp
+        m_MethodName: SelectionMenuTourelles
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4567546118481147476, guid: e5c6c4c5278ab69438b8a0a8e6fb6050,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &503255234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1974,6 +1987,12 @@ Transform:
   - {fileID: 1858120690}
   m_Father: {fileID: 573361890}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &607989959 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7450831201817127139, guid: dc508377a1492434182c3ff020275413,
+    type: 3}
+  m_PrefabInstance: {fileID: 1744510955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &637601294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,7 +2809,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1033614307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 165671519}
+        m_TargetAssemblyTypeName: MenuTourellesInteraction, Assembly-CSharp
+        m_MethodName: SelectionMenuTourelles
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4567546118481147476, guid: c1b46e510dcfdcb4ead0a9bf71388b8c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1033614307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2859,6 +2891,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 165671518}
+  - {fileID: 358807815}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094073752
@@ -4059,15 +4092,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585867853}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.418, y: 0.964, z: 0.224}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1268505064}
   - {fileID: 1593248333}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_Father: {fileID: 607989959}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1593248332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4363,6 +4396,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7450831201817127139, guid: dc508377a1492434182c3ff020275413,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1585867854}
     - targetCorrespondingSourceObject: {fileID: 6437463414849894804, guid: dc508377a1492434182c3ff020275413,
         type: 3}
       insertIndex: -1
@@ -5246,9 +5283,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 64287480}
   - {fileID: 475163720}
-  - {fileID: 358807815}
   - {fileID: 1877353778}
-  - {fileID: 1585867854}
   - {fileID: 1744510955}
   - {fileID: 1076653469}
   - {fileID: 933140860}
