@@ -18,9 +18,9 @@ public class GestionnaireScore : MonoBehaviour
         UpdateText();
     }
 
-    public void EnemyScore()
+    public void EnemyScore(int nombreScore)
     {
-        so_infosNiveaux.score += 5;
+        so_infosNiveaux.score += nombreScore;
         UpdateText();
     }
 
