@@ -15,8 +15,6 @@ public class Tourelle : MonoBehaviour
 
     [SerializeField] private GameObject model;
     [SerializeField] private GameObject head;
-    [SerializeField] private float rotationSpeed;
-    [SerializeField] private float maxHeadAngle;
 
     private int activeSpawnpoint;
     // Start is called before the first frame update
@@ -59,21 +57,21 @@ public class Tourelle : MonoBehaviour
 
     private void LookAtTarget()
     {
-        Vector3 modelTargetForward = Vector3.Lerp(model.transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - model.transform.position), rotationSpeed * Time.deltaTime);
+        Vector3 modelTargetForward = Vector3.Lerp(model.transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - model.transform.position), towerType.rotateSpeed * Time.deltaTime);
         modelTargetForward.y = 0;
 
         Quaternion modelTargetQuaternion = Quaternion.LookRotation(modelTargetForward);
 
         model.GetComponent<Rigidbody>().MoveRotation(modelTargetQuaternion);
 
-        Vector3 headTargetForward = Vector3.Lerp(bulletSpawnpoints[0].transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - bulletSpawnpoints[0].transform.position), rotationSpeed * Time.deltaTime);
+        Vector3 headTargetForward = Vector3.Lerp(bulletSpawnpoints[activeSpawnpoint].transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - bulletSpawnpoints[activeSpawnpoint].transform.position), towerType.rotateSpeed * Time.deltaTime);
         headTargetForward.x = 0;
 
         if(headTargetForward.z < 0) headTargetForward.z = -headTargetForward.z;
 
-        if(Vector3.Angle(Vector3.forward, headTargetForward) > maxHeadAngle)
+        if(Vector3.Angle(Vector3.forward, headTargetForward) > towerType.maxHeadAngle)
         {
-            headTargetForward = Vector3.Lerp(Vector3.forward, Vector3.up, maxHeadAngle / 90f);
+            headTargetForward = Vector3.Lerp(Vector3.forward, Vector3.up, towerType.maxHeadAngle / 90f);
         }
         Quaternion headTargetQuaternion = Quaternion.LookRotation(headTargetForward);
 
@@ -83,12 +81,15 @@ public class Tourelle : MonoBehaviour
 
     private void Attack()
     {
-        Debug.Log("Attack() was called!");
+        model.GetComponent<Animator>().SetTrigger("Shoot");
+
         GameObject newBullet = Instantiate(bullet, gameObject.transform);
 
         newBullet.GetComponent<Bullet>().trackedEnemy = enemiesInRange[0];
         newBullet.transform.position = bulletSpawnpoints[activeSpawnpoint].transform.position;
         newBullet.transform.Rotate(bulletSpawnpoints[activeSpawnpoint].transform.eulerAngles);
+
+        bulletSpawnpoints[activeSpawnpoint].GetChild(0).GetComponent<ParticleSystem>().Play();
 
         activeSpawnpoint++;
         if(activeSpawnpoint >= bulletSpawnpoints.Count) activeSpawnpoint = 0;
