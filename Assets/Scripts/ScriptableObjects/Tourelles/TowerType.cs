@@ -7,4 +7,6 @@ public class TowerType : ScriptableObject
 {
     public float fireCooldown;
     public GameObject bullet;
+    public float rotateSpeed;
+    public float maxHeadAngle;
 }

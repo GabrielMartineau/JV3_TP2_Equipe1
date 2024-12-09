@@ -161,9 +161,9 @@ public class BasicEnemyAI : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("Bullet"))
+        if(other.collider.gameObject.CompareTag("Bullet"))
         {
-            hP--;
+            hP -= other.collider.gameObject.GetComponent<Bullet>().bulletType.damage;
             if(hP <= 0) KillEnemy();
         }
     }
