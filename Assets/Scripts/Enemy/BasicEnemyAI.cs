@@ -14,12 +14,19 @@ public class BasicEnemyAI : MonoBehaviour
     private Vector3 axis2;
     private Vector3 balloonVector;
     private Rigidbody rb;
+    private Collider collider;
+    [SerializeField] private GameObject model;
+    [SerializeField] private GameObject zapParticle;
+    [SerializeField] private AudioSource deathSFX;
+    public bool isAlive;
     // Start is called before the first frame update
     void Start()
     {
         hP = enemy.maxHP;
         rb = gameObject.GetComponent<Rigidbody>();
+        collider = gameObject.GetComponent<Collider>();
         gameObject.GetComponent<LookAtConstraint>().SetSource(0, transform.parent.GetComponent<LookAtConstraint>().GetSource(0));
+        isAlive = true;
 
         switch(enemy.aiMoveType)
         {
@@ -36,16 +43,19 @@ public class BasicEnemyAI : MonoBehaviour
 
         Vector3 finalMove = Vector3.zero;
         
-        switch(enemy.aiMoveType)
+        if(isAlive)
         {
-            case (AIMoveType)0 : finalMove += FindPath(); break;
-            case (AIMoveType)1 : finalMove += axis1; break;
-            case (AIMoveType)2 : finalMove += (axis1 + axis2) / 2; break;
-            case (AIMoveType)3 : finalMove += (FindPath() * 2 + balloonVector) / 3; break;
-            default : break;
-        }
+            switch(enemy.aiMoveType)
+            {
+                case (AIMoveType)0 : finalMove += FindPath(); break;
+                case (AIMoveType)1 : finalMove += axis1; break;
+                case (AIMoveType)2 : finalMove += (axis1 + axis2) / 2; break;
+                case (AIMoveType)3 : finalMove += (FindPath() * 2 + balloonVector) / 3; break;
+                default : break;
+            }
 
-        rb.MovePosition(gameObject.transform.position + finalMove * enemy.speed * Time.deltaTime);
+            rb.MovePosition(gameObject.transform.position + finalMove * enemy.speed * Time.deltaTime);
+        }
     }
 
     private Vector3 FindPath()
@@ -159,6 +169,17 @@ public class BasicEnemyAI : MonoBehaviour
     }
 
     private void KillEnemy()
+    {
+        isAlive = false;
+        zapParticle.SetActive(true);
+        deathSFX.PlayOneShot(deathSFX.clip);
+        Destroy(rb);
+        Destroy(collider);
+        Destroy(model);
+        Invoke("DestroySelf", 3f);
+    }
+
+    private void DestroySelf()
     {
         Destroy(gameObject);
     }
