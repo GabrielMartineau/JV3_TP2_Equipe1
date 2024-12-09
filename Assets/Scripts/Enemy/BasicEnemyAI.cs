@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class BasicEnemyAI : MonoBehaviour
 {
-    [SerializeField] private GameObject objective;
+    public GameObject objective;
     [SerializeField] private EnemyType enemy;
 
     private int hP;
@@ -18,6 +19,7 @@ public class BasicEnemyAI : MonoBehaviour
     {
         hP = enemy.maxHP;
         rb = gameObject.GetComponent<Rigidbody>();
+        gameObject.GetComponent<LookAtConstraint>().SetSource(0, transform.parent.GetComponent<LookAtConstraint>().GetSource(0));
 
         switch(enemy.aiMoveType)
         {
