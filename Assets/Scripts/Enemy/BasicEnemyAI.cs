@@ -7,7 +7,7 @@ public class BasicEnemyAI : MonoBehaviour
     [SerializeField] private GameObject objective;
     [SerializeField] private EnemyType enemy;
 
-    public int hP;
+    private int hP;
 
     private Vector3 axis1;
     private Vector3 axis2;
@@ -141,5 +141,23 @@ public class BasicEnemyAI : MonoBehaviour
     private void BalloonRandomizer()
     {
         balloonVector = Vector3.Cross(FindPath(), Vector3.Normalize(new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f))));
+    }
+
+    /// <summary>
+    /// OnTriggerEnter is called when the Collider other enters the trigger.
+    /// </summary>
+    /// <param name="other">The other Collider involved in this collision.</param>
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Bullet"))
+        {
+            hP--;
+            if(hP <= 0) KillEnemy();
+        }
+    }
+
+    private void KillEnemy()
+    {
+        Destroy(gameObject);
     }
 }

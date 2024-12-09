@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
-  m_Name: TestEnemy
+  m_Script: {fileID: 11500000, guid: f8fc1e6058c23354ca6c2403687bd68f, type: 3}
+  m_Name: TestTower
   m_EditorClassIdentifier: 
-  speed: 0.2
-  maxHP: 5
-  aiMoveType: 2
+  fireCooldown: 0.2
+  bullet: {fileID: 9004280693369568890, guid: 7b2e8aca427895e48a04042270d77130, type: 3}
