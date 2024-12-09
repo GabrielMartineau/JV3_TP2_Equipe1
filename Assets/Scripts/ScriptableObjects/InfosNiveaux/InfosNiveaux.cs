@@ -7,4 +7,6 @@ public class InfosNiveaux : ScriptableObject
 {
     public int score;
     public int vague;
+
+    public int ennemisRestants;
 }
