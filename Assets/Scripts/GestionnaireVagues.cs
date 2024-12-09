@@ -25,7 +25,8 @@ public class GestionnaireVagues : MonoBehaviour
         //Temporaire, je dois mettre des variables pour le nombre de vagues et trouver une solution pour switcher du niveau 2 à la scène de fin sans qu'à la vague 5, il reload le niveau 2.
             if(so_infosNiveaux.ennemisRestants == 0 && so_infosNiveaux.vague < 5){
                 Debug.Log($"vague augmente lol");
-                Invoke("AugmenterVague­", 15.0f);
+                AugmenterVague();
+                //Invoke("AugmenterVague­", 15.0f);
             }
             else if(so_infosNiveaux.ennemisRestants == 0 && so_infosNiveaux.vague == 5){
                 gestionnaireScene.ChangeScene("Niveau2");
