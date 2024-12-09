@@ -6,19 +6,35 @@ public class Bullet : MonoBehaviour
 {
     public GameObject trackedEnemy;
 
-    private Vector3 path;
+    private Vector3 newForward;
+
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float rotationSpeed;
+
+    [SerializeField] private GameObject particles;
+    [SerializeField] private AudioSource sfx;
+    
+    public int damage;
+
 
     // Update is called once per frame
     void Update()
     {
-        if(trackedEnemy != null) path = FindPath(); else Invoke("KillBullet", 3f);
-        if(path == Vector3.zero) path = Vector3.up;
-        gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position + path * Time.deltaTime);
-    }
+        if(trackedEnemy != null)
+        {
+            if(!trackedEnemy.GetComponent<BasicEnemyAI>().isAlive)
+            {
+                trackedEnemy = null;
+            }
+            else
+            {
+                Vector3 targetForward = Vector3.Lerp(gameObject.transform.forward, Vector3.Normalize(trackedEnemy.transform.position - gameObject.transform.position), rotationSpeed * Time.deltaTime);
+                Quaternion targetQuaternion = Quaternion.LookRotation(targetForward);
+                gameObject.GetComponent<Rigidbody>().MoveRotation(targetQuaternion);
+            }
+        }
 
-    private Vector3 FindPath()
-    {
-        return Vector3.Normalize(trackedEnemy.transform.position - gameObject.transform.position);
+        gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position + gameObject.transform.forward * moveSpeed * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -26,7 +42,7 @@ public class Bullet : MonoBehaviour
         KillBullet();
     }
 
-    public void KillBullet()
+    private void KillBullet()
     {
         Destroy(gameObject);
     }
