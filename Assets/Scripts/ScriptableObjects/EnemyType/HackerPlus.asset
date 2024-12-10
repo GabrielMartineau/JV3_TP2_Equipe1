@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65775cb6dd2e1db4d9b13e1f656200f0, type: 3}
-  m_Name: Level5Bullet
+  m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
+  m_Name: HackerPlus
   m_EditorClassIdentifier: 
-  damage: 0.5
-  moveSpeed: 1
-  rotateSpeed: 0.5
+  speed: 0.25
+  maxHP: 80
+  aiMoveType: 3
+  score: 10

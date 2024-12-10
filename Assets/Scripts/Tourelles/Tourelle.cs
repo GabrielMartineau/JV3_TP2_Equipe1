@@ -71,15 +71,18 @@ public class Tourelle : MonoBehaviour
 
         Vector3 headTargetForward = Vector3.Slerp(aimPoint.transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - aimPoint.transform.position), towerType.rotateSpeed * Time.deltaTime);
 
-        if(Vector3.Angle(model.transform.forward, headTargetForward) > towerType.maxHeadAngle)
+        Vector3 flatTargetForward = headTargetForward;
+        flatTargetForward.y = 0;
+
+        if(Vector3.Angle(flatTargetForward, headTargetForward) > towerType.maxHeadAngle)
         {
             if(headTargetForward.y > 0)
             {
-                headTargetForward = Vector3.Slerp(model.transform.forward, Vector3.up, towerType.maxHeadAngle/90f);
+                headTargetForward = Vector3.Slerp(flatTargetForward, Vector3.up, towerType.maxHeadAngle/90f);
             }
             else
             {
-                headTargetForward = Vector3.Slerp(model.transform.forward, Vector3.down, towerType.maxHeadAngle/90f);
+                headTargetForward = Vector3.Slerp(flatTargetForward, Vector3.down, towerType.maxHeadAngle/90f);
             }
             
         }

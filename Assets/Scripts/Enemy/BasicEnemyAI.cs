@@ -18,6 +18,8 @@ public class BasicEnemyAI : MonoBehaviour
     [SerializeField] private GameObject model;
     [SerializeField] private GameObject zapParticle;
     [SerializeField] private AudioSource deathSFX;
+    public GestionnaireVagues waveManager;
+    public GestionnaireScore scoreManager;
     public bool isAlive;
     // Start is called before the first frame update
     void Start()
@@ -41,10 +43,12 @@ public class BasicEnemyAI : MonoBehaviour
     void Update()
     {
 
-        Vector3 finalMove = Vector3.zero;
+        
         
         if(isAlive)
         {
+            Vector3 finalMove = Vector3.zero;
+            
             switch(enemy.aiMoveType)
             {
                 case (AIMoveType)0 : finalMove += FindPath(); break;
@@ -170,7 +174,7 @@ public class BasicEnemyAI : MonoBehaviour
     public void LoseHP(float damage)
     {
         hP -= damage;
-        if(hP <= 0) KillEnemy();
+        if(hP <= 0 && isAlive) KillEnemy();
     }
 
     private void KillEnemy()
@@ -181,6 +185,8 @@ public class BasicEnemyAI : MonoBehaviour
         Destroy(rb);
         Destroy(collider);
         Destroy(model);
+        scoreManager.EnemyScore(enemy.score);
+        waveManager.VerifVagueTermine();
         Invoke("DestroySelf", 3f);
     }
 

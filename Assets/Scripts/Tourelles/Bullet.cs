@@ -30,6 +30,7 @@ public class Bullet : MonoBehaviour
                 if(!trackedEnemy.GetComponent<BasicEnemyAI>().isAlive)
                 {
                     trackedEnemy = null;
+                    Invoke("KillBullet", 2f);
                 }
                 else
                 {
@@ -46,6 +47,10 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if(other.collider.gameObject.CompareTag("Enemy"))
+        {
+            other.collider.gameObject.GetComponent<BasicEnemyAI>().LoseHP(bulletType.damage);
+        }
         KillBullet();
     }
 

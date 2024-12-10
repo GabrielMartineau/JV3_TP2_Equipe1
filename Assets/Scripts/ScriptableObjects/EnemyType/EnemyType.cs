@@ -9,4 +9,6 @@ public class EnemyType : ScriptableObject
     public float maxHP;
 
     public AIMoveType aiMoveType;
+
+    public int score;
 }
