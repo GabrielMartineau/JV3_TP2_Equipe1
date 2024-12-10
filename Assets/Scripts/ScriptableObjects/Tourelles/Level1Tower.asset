@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireCooldown: 1
   bullet: {fileID: 1040609200125065397, guid: c89ddbeae66a97d42a14da4794d80ff9, type: 3}
+  rotateSpeed: 15
+  maxHeadAngle: 60
