@@ -2240,7 +2240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2087086682835020654}
   m_Layer: 0
-  m_Name: Scene
+  m_Name: Scene2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2264,7 +2264,7 @@ Transform:
   - {fileID: 2091719834294153136}
   - {fileID: 6983576497384337207}
   - {fileID: 3759639448256554730}
-  - {fileID: 540976367471622776}
+  - {fileID: 120327855287815616}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5728762280979880387
@@ -3777,7 +3777,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 59a22d2ecb817604a9ae5a22c760dd64, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: b1592a3a0adfa6b48bd887bcc759fab3, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -4193,11 +4193,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -4285,11 +4295,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -4377,11 +4397,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -4558,11 +4588,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -4650,11 +4690,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -4831,11 +4881,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -4923,11 +4983,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -5015,11 +5085,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -5107,11 +5187,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -5288,11 +5378,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -5380,11 +5480,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -5561,11 +5671,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -5831,11 +5951,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -5923,11 +6053,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6015,11 +6155,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6107,11 +6257,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6199,11 +6359,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6469,11 +6639,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6561,11 +6741,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6653,11 +6843,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6745,11 +6945,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -6764,7 +6974,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7244158738377179157}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7521599261956245884
+--- !u!1001 &7501982575786030952
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6772,57 +6982,57 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2087086682835020654}
     m_Modifications:
-    - target: {fileID: 5986551007228767372, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 1916940807327344628, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_Name
-      value: Objectif
+      value: Objectif2
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: -0.3146
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.087404
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0402
+      value: 0.0912
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+    - target: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
@@ -6831,12 +7041,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ccbcd3692b3a1e8469bbdcdee84af16b, type: 3}
---- !u!4 &540976367471622776 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 342dee8238f5b8247b5d969123b48c63, type: 3}
+--- !u!4 &120327855287815616 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8062562148900467460, guid: ccbcd3692b3a1e8469bbdcdee84af16b,
+  m_CorrespondingSourceObject: {fileID: 7617584697482590888, guid: 342dee8238f5b8247b5d969123b48c63,
     type: 3}
-  m_PrefabInstance: {fileID: 7521599261956245884}
+  m_PrefabInstance: {fileID: 7501982575786030952}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7653811514450100590
 PrefabInstance:
@@ -6911,11 +7121,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
@@ -7003,11 +7223,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3576598566588591219, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f8ca39efe358d24b8f941482498f3f1,
         type: 3}
       propertyPath: m_Name
       value: FubarinoMini_v20 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070640613963425634, guid: 2f8ca39efe358d24b8f941482498f3f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2aa5279cc7241ea4fa3dae771ec6916a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2f8ca39efe358d24b8f941482498f3f1, type: 3}
