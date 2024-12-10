@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 5187104701480801371}
   - component: {fileID: 8650648531263089176}
   m_Layer: 0
-  m_Name: Device
+  m_Name: DevicePlus
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: {fileID: 0}
-  enemy: {fileID: 11400000, guid: a93ba905fc44a504f8479fb22f5df9de, type: 2}
+  enemy: {fileID: 11400000, guid: c3a7577910609154d81aa52dac1e1129, type: 2}
   hP: 0
   model: {fileID: 4636033198587340859}
   zapParticle: {fileID: 2443219876835998256}

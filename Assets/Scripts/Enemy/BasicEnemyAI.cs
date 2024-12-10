@@ -43,10 +43,12 @@ public class BasicEnemyAI : MonoBehaviour
     void Update()
     {
 
-        Vector3 finalMove = Vector3.zero;
+        
         
         if(isAlive)
         {
+            Vector3 finalMove = Vector3.zero;
+            
             switch(enemy.aiMoveType)
             {
                 case (AIMoveType)0 : finalMove += FindPath(); break;

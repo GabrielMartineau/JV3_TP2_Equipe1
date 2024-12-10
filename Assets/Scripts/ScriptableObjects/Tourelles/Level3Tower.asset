@@ -15,5 +15,5 @@ MonoBehaviour:
   fireCooldown: 0.5
   bulletsPerShot: 2
   bullet: {fileID: 1040609200125065397, guid: 0449b95cfa743c9458fa94abd0082278, type: 3}
-  rotateSpeed: 5
-  maxHeadAngle: 30
+  rotateSpeed: 10
+  maxHeadAngle: 45

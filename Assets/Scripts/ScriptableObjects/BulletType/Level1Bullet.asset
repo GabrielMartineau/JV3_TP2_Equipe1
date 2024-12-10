@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   moveSpeed: 1
-  rotateSpeed: 10
+  rotateSpeed: 15

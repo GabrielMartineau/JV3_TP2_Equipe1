@@ -100,9 +100,9 @@ MonoBehaviour:
   objective: {fileID: 0}
   enemyParent: {fileID: 0}
   enemies:
-  - {fileID: 5083585194126567856, guid: 2dee403ec3e8e4c48ae750b985b06d90, type: 3}
-  - {fileID: 4857612707931590296, guid: 7c3216289bc2b0d469eec861dc1ec74f, type: 3}
-  - {fileID: 4428350686215825229, guid: 9b0548ed073d679499137dc41bd6c794, type: 3}
+  - {fileID: 5083585194126567856, guid: 80ee7cf7eb9126a48bffa7e11350e8c2, type: 3}
+  - {fileID: 4857612707931590296, guid: 0930f673505b61340ad058e2ade5d66b, type: 3}
+  - {fileID: 4428350686215825229, guid: f30248bf2b9c0c441b86128d7207a644, type: 3}
   scoreManager: {fileID: 0}
   waveManager: {fileID: 0}
   repeatCount: 0

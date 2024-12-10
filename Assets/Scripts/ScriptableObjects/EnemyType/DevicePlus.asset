@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8fc1e6058c23354ca6c2403687bd68f, type: 3}
-  m_Name: Level1Tower
+  m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
+  m_Name: DevicePlus
   m_EditorClassIdentifier: 
-  fireCooldown: 1
-  bulletsPerShot: 1
-  bullet: {fileID: 1040609200125065397, guid: c89ddbeae66a97d42a14da4794d80ff9, type: 3}
-  rotateSpeed: 20
-  maxHeadAngle: 60
+  speed: 0.425
+  maxHP: 25
+  aiMoveType: 0
+  score: 7

@@ -33,13 +33,7 @@ public class GestionnaireVagues : MonoBehaviour
     {    
         if(!waveOver && !paused)
         {
-            CompterEnnemisRestants();
-            switch(so_infosNiveaux.ennemisRestants)
-            {
-                case 0 : waveOver = true; break;
-                default : waveOver = false; break;
-            }
-            
+            waveOver = EnemyCheck();
             for(int i = 0; i < gameObject.transform.childCount; i++)
             {
                 if(gameObject.transform.GetChild(i).GetComponent<EnemySpawnpoint>().isActive)
@@ -62,23 +56,38 @@ public class GestionnaireVagues : MonoBehaviour
             }        
     }
 
-    private bool DoubleCheck()
+    private bool EnemyCheck()
     {
         CompterEnnemisRestants();
-        if(so_infosNiveaux.ennemisRestants == 0) return true; else return false;
+        
+        if(so_infosNiveaux.ennemisRestants == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        
     }
 
+
     private void AugmenterVague(){
-        if(DoubleCheck())
+        if(EnemyCheck())
         {
             so_infosNiveaux.vague++;
             Debug.Log($"la vague a augmenté");
             gestionnaireScore.UpdateText();
             DemarrerSpawners();
             
+            waveOver = false;
+            paused = false;
         }
-        waveOver = false;
-        paused = false;
+        else
+        {
+            Invoke("AugmenterVague", 3f);
+        }
+        
         
 
         
@@ -86,9 +95,13 @@ public class GestionnaireVagues : MonoBehaviour
 
     private void NiveauSuivant()
     {
-        if(DoubleCheck())
+        if(EnemyCheck())
         {
             gestionnaireScene.ChangeScene("Niveau2");
+        }
+        else
+        {
+            Invoke("NiveauSuivant", 3f);
         }
     }
 
@@ -105,7 +118,7 @@ public class GestionnaireVagues : MonoBehaviour
         int ennemisRestants = 0;
         for(int i = 0; i < ennemis.transform.childCount; i++)
         {
-            if(ennemis.transform.GetChild(0).GetComponent<BasicEnemyAI>().isAlive)
+            if(ennemis.transform.GetChild(i).GetComponent<BasicEnemyAI>().isAlive)
             {
                 ennemisRestants++;
             }
