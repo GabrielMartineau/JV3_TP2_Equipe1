@@ -87,7 +87,9 @@ public class Tourelle : MonoBehaviour
 
         newBullet.GetComponent<Bullet>().trackedEnemy = enemiesInRange[0];
         newBullet.transform.position = bulletSpawnpoints[activeSpawnpoint].transform.position;
-        newBullet.transform.Rotate(bulletSpawnpoints[activeSpawnpoint].transform.eulerAngles);
+
+        Quaternion rotation = Quaternion.LookRotation(bulletSpawnpoints[activeSpawnpoint].forward);
+        newBullet.GetComponent<Rigidbody>().MoveRotation(rotation);
 
         bulletSpawnpoints[activeSpawnpoint].GetChild(0).GetComponent<ParticleSystem>().Play();
 
