@@ -10082,7 +10082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 59a3c582-6151-4fa3-86c6-b023366ee96c
+  instanceId: e9f0aa7c-1baa-4057-962c-edfbb92c2697
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
@@ -10228,7 +10228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: 5526df92-ce5e-41cb-bc20-da8e0a721028
+  instanceId: 523af2a6-dfc9-4514-ab14-92e95a66df65
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -10406,8 +10406,7 @@ MonoBehaviour:
   - {fileID: 8766613673203634337}
   model: {fileID: 7775832669044503754}
   head: {fileID: 7775832671355540406}
-  rotationSpeed: 15
-  maxHeadAngle: 60
+  aimPoint: {fileID: 8615160147079097155}
 --- !u!135 &2192546638116816106
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10493,6 +10492,37 @@ Transform:
   - {fileID: 3750029926493507072}
   m_Father: {fileID: 7774610305282637594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8615160147079097155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7821891914297482198}
+  m_Layer: 0
+  m_Name: AimPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7821891914297482198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8615160147079097155}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7774610305282637594}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7776242235903474372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10556,6 +10586,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8766613673203634337}
+    - targetCorrespondingSourceObject: {fileID: 4000012415272414, guid: d9231829d3cedca409477c9327eb6425,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7821891914297482198}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1000013227101710, guid: d9231829d3cedca409477c9327eb6425,
         type: 3}

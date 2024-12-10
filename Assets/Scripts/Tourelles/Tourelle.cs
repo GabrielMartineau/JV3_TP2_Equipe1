@@ -15,6 +15,7 @@ public class Tourelle : MonoBehaviour
 
     [SerializeField] private GameObject model;
     [SerializeField] private GameObject head;
+    [SerializeField] private GameObject aimPoint;
 
     private int activeSpawnpoint;
     // Start is called before the first frame update
@@ -31,10 +32,14 @@ public class Tourelle : MonoBehaviour
     {
         if(enemiesInRange.Count > 0)
         {
-            LookAtTarget();
+            
             if(enemiesInRange[0] == null || enemiesInRange[0].GetComponent<BasicEnemyAI>().isAlive == false)
             {
                 enemiesInRange.Remove(enemiesInRange[0]);
+            }
+            else
+            {
+                LookAtTarget();
             }
         }
 
@@ -57,25 +62,32 @@ public class Tourelle : MonoBehaviour
 
     private void LookAtTarget()
     {
-        Vector3 modelTargetForward = Vector3.Lerp(model.transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - model.transform.position), towerType.rotateSpeed * Time.deltaTime);
+        Vector3 modelTargetForward = Vector3.Slerp(model.transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - model.transform.position), towerType.rotateSpeed * Time.deltaTime);
         modelTargetForward.y = 0;
 
         Quaternion modelTargetQuaternion = Quaternion.LookRotation(modelTargetForward);
 
         model.GetComponent<Rigidbody>().MoveRotation(modelTargetQuaternion);
 
-        Vector3 headTargetForward = Vector3.Lerp(bulletSpawnpoints[activeSpawnpoint].transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - bulletSpawnpoints[activeSpawnpoint].transform.position), towerType.rotateSpeed * Time.deltaTime);
-        headTargetForward.x = 0;
+        Vector3 headTargetForward = Vector3.Slerp(aimPoint.transform.forward, Vector3.Normalize(enemiesInRange[0].transform.position - aimPoint.transform.position), towerType.rotateSpeed * Time.deltaTime);
 
-        if(headTargetForward.z < 0) headTargetForward.z = -headTargetForward.z;
-
-        if(Vector3.Angle(Vector3.forward, headTargetForward) > towerType.maxHeadAngle)
+        if(Vector3.Angle(model.transform.forward, headTargetForward) > towerType.maxHeadAngle)
         {
-            headTargetForward = Vector3.Lerp(Vector3.forward, Vector3.up, towerType.maxHeadAngle / 90f);
+            if(headTargetForward.y > 0)
+            {
+                headTargetForward = Vector3.Slerp(model.transform.forward, Vector3.up, towerType.maxHeadAngle/90f);
+            }
+            else
+            {
+                headTargetForward = Vector3.Slerp(model.transform.forward, Vector3.down, towerType.maxHeadAngle/90f);
+            }
+            
         }
+        
+
         Quaternion headTargetQuaternion = Quaternion.LookRotation(headTargetForward);
 
-        head.GetComponent<Rigidbody>().MoveRotation(modelTargetQuaternion * headTargetQuaternion);
+        head.GetComponent<Rigidbody>().MoveRotation(headTargetQuaternion);
         
     }
 
@@ -83,18 +95,28 @@ public class Tourelle : MonoBehaviour
     {
         model.GetComponent<Animator>().SetTrigger("Shoot");
 
-        GameObject newBullet = Instantiate(bullet, gameObject.transform);
+        for(int i = 0; i < towerType.bulletsPerShot; i++)
+        {
+            GameObject newBullet = Instantiate(bullet, gameObject.transform);
 
-        newBullet.GetComponent<Bullet>().trackedEnemy = enemiesInRange[0];
-        newBullet.transform.position = bulletSpawnpoints[activeSpawnpoint].transform.position;
+            if(newBullet.GetComponent<Bullet>() != null)
+            {
+                newBullet.GetComponent<Bullet>().trackedEnemy = enemiesInRange[0];
+                newBullet.transform.position = bulletSpawnpoints[activeSpawnpoint].transform.position;
 
-        Quaternion rotation = Quaternion.LookRotation(bulletSpawnpoints[activeSpawnpoint].forward);
-        newBullet.GetComponent<Rigidbody>().MoveRotation(rotation);
+                Quaternion rotation = Quaternion.LookRotation(bulletSpawnpoints[activeSpawnpoint].forward);
+                newBullet.GetComponent<Rigidbody>().MoveRotation(rotation);
+            }
+            else if(newBullet.GetComponent<LaserBeam>() != null)
+            {
+                newBullet.GetComponent<LaserBeam>().origin = bulletSpawnpoints[activeSpawnpoint];
+            }
 
-        bulletSpawnpoints[activeSpawnpoint].GetChild(0).GetComponent<ParticleSystem>().Play();
+            bulletSpawnpoints[activeSpawnpoint].GetChild(0).GetComponent<ParticleSystem>().Play();
 
-        activeSpawnpoint++;
-        if(activeSpawnpoint >= bulletSpawnpoints.Count) activeSpawnpoint = 0;
+            activeSpawnpoint++;
+            if(activeSpawnpoint >= bulletSpawnpoints.Count) activeSpawnpoint = 0;
+        }
 
         cooldown = towerType.fireCooldown;
     }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyType : ScriptableObject
 {
     public float speed;
-    public int maxHP;
+    public float maxHP;
 
     public AIMoveType aiMoveType;
 }

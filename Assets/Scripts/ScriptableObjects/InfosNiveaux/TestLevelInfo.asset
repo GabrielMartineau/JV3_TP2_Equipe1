@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8fc1e6058c23354ca6c2403687bd68f, type: 3}
-  m_Name: TestTower
+  m_Script: {fileID: 11500000, guid: 749e8cd412bad904e8551f8ca0d62eeb, type: 3}
+  m_Name: TestLevelInfo
   m_EditorClassIdentifier: 
-  fireCooldown: 0.2
-  bulletsPerShot: 0
-  bullet: {fileID: 9004280693369568890, guid: 7b2e8aca427895e48a04042270d77130, type: 3}
-  rotateSpeed: 1
-  maxHeadAngle: 1
+  score: 0
+  vague: 1
+  ennemisRestants: 0

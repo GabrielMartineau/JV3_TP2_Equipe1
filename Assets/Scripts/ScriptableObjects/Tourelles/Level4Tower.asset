@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level4Tower
   m_EditorClassIdentifier: 
   fireCooldown: 0.08333334
+  bulletsPerShot: 1
   bullet: {fileID: 1040609200125065397, guid: 508781b077cb2be4ab74d279c830f21e, type: 3}
-  rotateSpeed: 5
-  maxHeadAngle: 30
+  rotateSpeed: 10
+  maxHeadAngle: 40

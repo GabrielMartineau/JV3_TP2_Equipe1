@@ -8,7 +8,7 @@ public class BasicEnemyAI : MonoBehaviour
     public GameObject objective;
     [SerializeField] private EnemyType enemy;
 
-    private int hP;
+    public float hP;
 
     private Vector3 axis1;
     private Vector3 axis2;
@@ -161,11 +161,16 @@ public class BasicEnemyAI : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     private void OnCollisionEnter(Collision other)
     {
-        if(other.collider.gameObject.CompareTag("Bullet"))
+        if(other.collider.gameObject.CompareTag("Bullet") && other.collider.gameObject.GetComponent<Bullet>() != null)
         {
-            hP -= other.collider.gameObject.GetComponent<Bullet>().bulletType.damage;
-            if(hP <= 0) KillEnemy();
+            LoseHP(other.collider.gameObject.GetComponent<Bullet>().bulletType.damage);
         }
+    }
+
+    public void LoseHP(float damage)
+    {
+        hP -= damage;
+        if(hP <= 0) KillEnemy();
     }
 
     private void KillEnemy()
