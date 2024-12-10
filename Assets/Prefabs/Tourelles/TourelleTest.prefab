@@ -181,10 +181,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerType: {fileID: 11400000, guid: f05cf32a43c878948880330df04a9174, type: 2}
-  bullet: {fileID: 9004280693369568890, guid: 7b2e8aca427895e48a04042270d77130, type: 3}
   bulletSpawnpoints:
   - {fileID: 6000637005721625978}
+  model: {fileID: 0}
   head: {fileID: 7053538726212782303}
+  aimPoint: {fileID: 0}
 --- !u!1 &5428009489464016008
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +197,7 @@ GameObject:
   - component: {fileID: 1699863866998412589}
   m_Layer: 0
   m_Name: TourelleTest
-  m_TagString: Untagged
+  m_TagString: Tourelle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

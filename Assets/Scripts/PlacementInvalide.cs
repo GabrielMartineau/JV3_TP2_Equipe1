@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlacementInvalide : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    [SerializeField] private Material couleurInvalide;
+    [SerializeField] private Material couleurDeBase;
+    [SerializeField] private AudioSource audioInvalide;
+    private void OnTriggerEnter(Collider other) {
+        if(other.CompareTag("Tourelle")){
+            gameObject.GetComponent<Renderer>().material = couleurInvalide;
+            audioInvalide.Play();
+        }
+    }
+    private void OnTriggerExit(Collider other) {
+        if(other.CompareTag("Tourelle")){
+            gameObject.GetComponent<Renderer>().material = couleurDeBase;
+        }
     }
 }
