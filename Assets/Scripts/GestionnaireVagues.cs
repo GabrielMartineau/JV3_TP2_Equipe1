@@ -27,6 +27,10 @@ public class GestionnaireVagues : MonoBehaviour
                 Debug.Log($"vague augmente lol");
                 Invoke("AugmenterVague", 5.0f);
             }
+            if(so_infosNiveaux.ennemisRestants == 0 && so_infosNiveaux.vague == 10)
+            {
+                gestionnaireScene.ChangeScene("GameOver");
+            }
             else if(so_infosNiveaux.ennemisRestants == 0 && so_infosNiveaux.vague == 5){
                 gestionnaireScene.ChangeScene("Niveau2");
             }
