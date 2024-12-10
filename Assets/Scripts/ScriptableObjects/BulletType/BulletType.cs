@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BulletType", menuName = "SO/BulletType")]
 public class BulletType : ScriptableObject
 {
-    public int damage;
+    public float damage;
     public float moveSpeed;
     public float rotateSpeed;
 }

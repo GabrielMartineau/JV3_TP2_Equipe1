@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
                 }
                 else
                 {
-                    Vector3 targetForward = Vector3.Lerp(gameObject.transform.forward, Vector3.Normalize(trackedEnemy.transform.position - gameObject.transform.position), bulletType.rotateSpeed * Time.deltaTime);
+                    Vector3 targetForward = Vector3.Slerp(gameObject.transform.forward, Vector3.Normalize(trackedEnemy.transform.position - gameObject.transform.position), bulletType.rotateSpeed * Time.deltaTime);
                     Quaternion targetQuaternion = Quaternion.LookRotation(targetForward);
                     gameObject.GetComponent<Rigidbody>().MoveRotation(targetQuaternion);
                 }

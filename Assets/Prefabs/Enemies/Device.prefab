@@ -159,7 +159,7 @@ Transform:
   m_GameObject: {fileID: 4857612707931590296}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 1.5}
+  m_LocalPosition: {x: 0.033, y: 0.752, z: 2.085}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -253,6 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: {fileID: 0}
   enemy: {fileID: 11400000, guid: a93ba905fc44a504f8479fb22f5df9de, type: 2}
+  hP: 0
   model: {fileID: 4636033198587340859}
   zapParticle: {fileID: 2443219876835998256}
   deathSFX: {fileID: 7436081579932262463}

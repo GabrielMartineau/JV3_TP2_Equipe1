@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5384847275818652228}
   - component: {fileID: 4466327015594238811}
-  - component: {fileID: 3005458087441559098}
-  - component: {fileID: 6124708627692218027}
+  - component: {fileID: 4279407685508189389}
+  - component: {fileID: 5465635935205799722}
   m_Layer: 6
-  m_Name: Level1Bullet
+  m_Name: Level5Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1825113323447476117}
@@ -53,15 +53,15 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 64
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.1
-  m_Height: 1.25
+  m_Height: 10
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3005458087441559098
+  m_Center: {x: 0, y: 0, z: 5}
+--- !u!114 &4279407685508189389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,15 +70,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1040609200125065397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8294b57c29a73ab40a8e5611c6272da4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4332cdcc2112e0a4db406cc1db44d1f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackedEnemy: {fileID: 0}
+  bulletType: {fileID: 11400000, guid: 762742bbda5dc7a4ca7b4595253534d8, type: 2}
+  origin: {fileID: 0}
   model: {fileID: 1825113323447527381}
-  particles: {fileID: 758315146392108426}
-  sfx: {fileID: 4346043979608028667}
-  bulletType: {fileID: 11400000, guid: 62d01d7a6b7ed5e46a5b46d5c2013575, type: 2}
---- !u!54 &6124708627692218027
+--- !u!54 &5465635935205799722
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,7 +273,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d62c1600e502e6f41bd6508a67e1738e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3532cdd0d03ef40a9960ec71c769f220, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -285,8 +283,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.1
-  MaxDistance: 2
+  MinDistance: 1
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -423,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
       propertyPath: m_endPos.z
-      value: -0.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
       propertyPath: m_lineWidth
@@ -435,7 +433,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
       propertyPath: m_startPos.z
-      value: 0.5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_lineColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_lineColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_lineColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_lineColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
       propertyPath: m_lightSaberFactor
@@ -509,7 +523,7 @@ PrefabInstance:
     - target: {fileID: 4664980042958797330, guid: ec3f674830402cc45bce805cf6493db7,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
+      value: 0.5019608
       objectReference: {fileID: 0}
     - target: {fileID: 4664980042958797330, guid: ec3f674830402cc45bce805cf6493db7,
         type: 3}
@@ -519,7 +533,7 @@ PrefabInstance:
     - target: {fileID: 4664980042958797330, guid: ec3f674830402cc45bce805cf6493db7,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.5
+      value: 0.5019608
       objectReference: {fileID: 0}
     - target: {fileID: 4794796692778296956, guid: ec3f674830402cc45bce805cf6493db7,
         type: 3}
@@ -584,7 +598,7 @@ PrefabInstance:
     - target: {fileID: 5024009746357069192, guid: ec3f674830402cc45bce805cf6493db7,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5024009746357069192, guid: ec3f674830402cc45bce805cf6493db7,
         type: 3}
@@ -709,12 +723,6 @@ PrefabInstance:
 --- !u!4 &758315146392108425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5024009746357069193, guid: ec3f674830402cc45bce805cf6493db7,
-    type: 3}
-  m_PrefabInstance: {fileID: 5710227487578478592}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &758315146392108426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7,
     type: 3}
   m_PrefabInstance: {fileID: 5710227487578478592}
   m_PrefabAsset: {fileID: 0}

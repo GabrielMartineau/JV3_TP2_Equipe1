@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fc1e6058c23354ca6c2403687bd68f, type: 3}
   m_Name: Level3Tower
   m_EditorClassIdentifier: 
-  fireCooldown: 0.175
+  fireCooldown: 0.5
+  bulletsPerShot: 2
   bullet: {fileID: 1040609200125065397, guid: 0449b95cfa743c9458fa94abd0082278, type: 3}
   rotateSpeed: 5
   maxHeadAngle: 30

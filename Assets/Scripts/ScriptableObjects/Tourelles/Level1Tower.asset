@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level1Tower
   m_EditorClassIdentifier: 
   fireCooldown: 1
+  bulletsPerShot: 1
   bullet: {fileID: 1040609200125065397, guid: c89ddbeae66a97d42a14da4794d80ff9, type: 3}
   rotateSpeed: 15
   maxHeadAngle: 60

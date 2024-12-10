@@ -253,6 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: {fileID: 0}
   enemy: {fileID: 11400000, guid: 1b015c8ba200ebf48806d851fb5480f3, type: 2}
+  hP: 0
   model: {fileID: 1922936766900792208}
   zapParticle: {fileID: 1625298522645621856}
   deathSFX: {fileID: 1849269659997535406}
