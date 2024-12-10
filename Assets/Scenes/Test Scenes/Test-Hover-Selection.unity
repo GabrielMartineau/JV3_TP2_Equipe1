@@ -171,7 +171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &69069913
 Transform:
   m_ObjectHideFlags: 0
@@ -2705,7 +2705,7 @@ PrefabInstance:
     - target: {fileID: 472196326326220409, guid: b0e4595f556fbf84a87b2aa12006723c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5072179449322683278, guid: b0e4595f556fbf84a87b2aa12006723c,
         type: 3}
@@ -3923,6 +3923,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422970509116864280, guid: ce577a9994a3b7c41926d3d2d2903b8e,
+        type: 3}
+      propertyPath: instanceId
+      value: db906e61-18f6-4944-8566-0526edc0f431
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139356743522516504, guid: ce577a9994a3b7c41926d3d2d2903b8e,
+        type: 3}
+      propertyPath: instanceId
+      value: 5dc7f95f-6910-46da-a75e-d57050c28886
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6759,6 +6769,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5422970509116864280, guid: ce577a9994a3b7c41926d3d2d2903b8e,
+        type: 3}
+      propertyPath: instanceId
+      value: e42a54d1-f239-4472-9159-a4ccdd23b1ec
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139356743522516504, guid: ce577a9994a3b7c41926d3d2d2903b8e,
+        type: 3}
+      propertyPath: instanceId
+      value: 3eeb8cb3-c0b2-49b6-9ddb-22ebb4201ec7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7033,6 +7053,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422970509116864280, guid: ce577a9994a3b7c41926d3d2d2903b8e,
+        type: 3}
+      propertyPath: instanceId
+      value: 83506275-3119-41fd-8a42-7493ad955291
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139356743522516504, guid: ce577a9994a3b7c41926d3d2d2903b8e,
+        type: 3}
+      propertyPath: instanceId
+      value: c0425fdf-2929-4934-bdb3-f37c7a0566f3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
