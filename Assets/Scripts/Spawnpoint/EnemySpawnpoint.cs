@@ -10,22 +10,30 @@ public class EnemySpawnpoint : MonoBehaviour
     [SerializeField] private Transform enemyParent;
     [SerializeField] private List<GameObject> enemies;
 
+    public GestionnaireScore scoreManager;
+    public GestionnaireVagues waveManager;
+
     public int repeatCount;
+    public bool isActive;
 
     public void StartNewWave()
     {
+        isActive = true;
         SetRepeatCount();
         LaunchEnemy();
     }
 
     private void SetRepeatCount()
     {
-        repeatCount = 5 + 2 * levelInfo.vague;
+        repeatCount = 3 + 2 * levelInfo.vague;
     }
 
     private void LaunchEnemy()
     {
-        float cooldown = Random.Range(1f, 3f);
+        float maxDelay = 3f;
+        if(levelInfo.vague == 4) maxDelay = 2.5f;
+        if(levelInfo.vague == 5) maxDelay = 2f;
+        float cooldown = Random.Range(1f, maxDelay);
         Invoke("SpawnNewEnemy", cooldown);
         repeatCount--;
     }
@@ -36,12 +44,18 @@ public class EnemySpawnpoint : MonoBehaviour
 
         newEnemy.transform.position = gameObject.transform.position;
         newEnemy.GetComponent<BasicEnemyAI>().objective = objective;
+        newEnemy.GetComponent<BasicEnemyAI>().waveManager = waveManager;
+        newEnemy.GetComponent<BasicEnemyAI>().scoreManager = scoreManager;
 
         Instantiate(newEnemy, enemyParent);
 
         if(repeatCount > 0) 
         {
             LaunchEnemy();
+        }
+        else
+        {
+            isActive = false;
         }
     }
 }

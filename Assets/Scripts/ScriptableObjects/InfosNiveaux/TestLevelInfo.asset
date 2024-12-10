@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749e8cd412bad904e8551f8ca0d62eeb, type: 3}
   m_Name: TestLevelInfo
   m_EditorClassIdentifier: 
-  score: 0
+  score: 75
   vague: 1
-  ennemisRestants: 0
+  ennemisRestants: 1
