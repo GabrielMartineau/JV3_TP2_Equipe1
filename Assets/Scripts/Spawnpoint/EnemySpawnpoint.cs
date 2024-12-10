@@ -4,46 +4,35 @@ using UnityEngine;
 
 public class EnemySpawnpoint : MonoBehaviour
 {
-    // Variable temporaire: a remplacer lorsqu'on aura un systeme de vague
-    [SerializeField] private int waveCount;
-    [SerializeField] private List<GameObject> enemies;
-    [SerializeField] private Transform enemyParent;
+    [SerializeField] private InfosNiveaux levelInfo;
 
     [SerializeField] private GameObject objective;
+    [SerializeField] private Transform enemyParent;
+    [SerializeField] private List<GameObject> enemies;
 
-    private int repeatCount;
-    // Start is called before the first frame update
-    
-    private void Start()
+    public int repeatCount;
+
+    public void StartNewWave()
     {
-        // Ligne temporaire: LaunchEnemies va être appelée par une autre fonction.
         SetRepeatCount();
         LaunchEnemy();
-    }
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     private void SetRepeatCount()
     {
-        repeatCount = 5 + 2 * waveCount;
+        repeatCount = 5 + 2 * levelInfo.vague;
     }
 
-    public void LaunchEnemy()
+    private void LaunchEnemy()
     {
-
         float cooldown = Random.Range(1f, 3f);
         Invoke("SpawnNewEnemy", cooldown);
         repeatCount--;
-        
-        
-        
     }
 
     private void SpawnNewEnemy()
     {
-        GameObject newEnemy = enemies[Random.Range(0, waveCount)];
+        GameObject newEnemy = enemies[Random.Range(0, Mathf.Min(levelInfo.vague, enemies.Count))];
 
         newEnemy.transform.position = gameObject.transform.position;
         newEnemy.GetComponent<BasicEnemyAI>().objective = objective;
