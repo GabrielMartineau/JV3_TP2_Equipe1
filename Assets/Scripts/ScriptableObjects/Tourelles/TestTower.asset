@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: TestTower
   m_EditorClassIdentifier: 
   fireCooldown: 0.2
+  bulletsPerShot: 0
   bullet: {fileID: 9004280693369568890, guid: 7b2e8aca427895e48a04042270d77130, type: 3}
+  rotateSpeed: 1
+  maxHeadAngle: 1

@@ -6,26 +6,66 @@ public class Bullet : MonoBehaviour
 {
     public GameObject trackedEnemy;
 
-    private Vector3 path;
+    [SerializeField] private GameObject model;
+    [SerializeField] private GameObject particles;
+    [SerializeField] private AudioSource sfx;
+
+    public BulletType bulletType;
+
+    private bool isActive;
+
+    void Start()
+    {
+        isActive = true;
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        if(trackedEnemy != null) path = FindPath(); else path = Vector3.up;
-        gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position + path * Time.deltaTime);
-    }
+        if(isActive)
+        {
+            if(trackedEnemy != null)
+            {
+                if(!trackedEnemy.GetComponent<BasicEnemyAI>().isAlive)
+                {
+                    trackedEnemy = null;
+                    Invoke("KillBullet", 2f);
+                }
+                else
+                {
+                    Vector3 targetForward = Vector3.Slerp(gameObject.transform.forward, Vector3.Normalize(trackedEnemy.transform.position - gameObject.transform.position), bulletType.rotateSpeed * Time.deltaTime);
+                    Quaternion targetQuaternion = Quaternion.LookRotation(targetForward);
+                    gameObject.GetComponent<Rigidbody>().MoveRotation(targetQuaternion);
+                }
+            }
 
-    private Vector3 FindPath()
-    {
-        return Vector3.Normalize(trackedEnemy.transform.position - gameObject.transform.position);
+            gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position + gameObject.transform.forward * bulletType.moveSpeed * Time.deltaTime);
+        }
+        
     }
 
     private void OnCollisionEnter(Collision other)
     {
+        if(other.collider.gameObject.CompareTag("Enemy"))
+        {
+            other.collider.gameObject.GetComponent<BasicEnemyAI>().LoseHP(bulletType.damage);
+        }
         KillBullet();
     }
 
-    public void KillBullet()
+    private void KillBullet()
+    {
+        isActive = false;
+        model.SetActive(false);
+        particles.SetActive(true);
+        sfx.PlayOneShot(sfx.clip);
+        Destroy(gameObject.GetComponent<Rigidbody>());
+        Destroy(gameObject.GetComponent<Collider>());
+        Invoke("DestroySelf", 2f);
+    }
+
+    private void DestroySelf()
     {
         Destroy(gameObject);
     }

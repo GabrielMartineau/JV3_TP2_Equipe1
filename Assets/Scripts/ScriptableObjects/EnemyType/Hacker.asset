@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Hacker
   m_EditorClassIdentifier: 
   speed: 0.25
-  maxHP: 25
+  maxHP: 60
   aiMoveType: 3
+  score: 7

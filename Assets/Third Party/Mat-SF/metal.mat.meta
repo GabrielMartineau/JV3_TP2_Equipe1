@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Third Party/Mat-SF/metal.mat.meta
 guid: d9c4425850c834842955142fdb244f81
+========
+guid: e800259053abbf14fa54d05dd53dee19
+>>>>>>>> develop:Assets/Third Party/Vefects/Zap VFX URP/Demo/Scene/Materials/M_Sky.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

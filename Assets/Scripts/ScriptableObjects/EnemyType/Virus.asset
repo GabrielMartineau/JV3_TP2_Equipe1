@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Virus
   m_EditorClassIdentifier: 
   speed: 0.375
-  maxHP: 5
-  aiMoveType: 2
+  maxHP: 10
+  aiMoveType: 1
+  score: 3

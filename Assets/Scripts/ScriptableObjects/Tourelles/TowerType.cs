@@ -6,5 +6,8 @@ using UnityEngine;
 public class TowerType : ScriptableObject
 {
     public float fireCooldown;
+    public float bulletsPerShot;
     public GameObject bullet;
+    public float rotateSpeed;
+    public float maxHeadAngle;
 }

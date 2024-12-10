@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Device
   m_EditorClassIdentifier: 
   speed: 0.375
-  maxHP: 10
+  maxHP: 20
   aiMoveType: 0
+  score: 5
