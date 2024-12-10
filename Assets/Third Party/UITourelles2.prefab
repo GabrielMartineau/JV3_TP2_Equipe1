@@ -708,7 +708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6462244393448902932}
   m_Layer: 0
-  m_Name: UITourelles
+  m_Name: UITourelles2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
