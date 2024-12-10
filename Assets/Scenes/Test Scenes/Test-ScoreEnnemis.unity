@@ -6648,6 +6648,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   so_infosNiveaux: {fileID: 11400000, guid: cbd883ab0c0bacc4d8d444b122d3fbd1, type: 2}
   gestionnaireScore: {fileID: 1616727169}
+  gestionnaireScene: {fileID: 974044712}
+  ennemis: {fileID: 0}
 --- !u!1 &1870412754
 GameObject:
   m_ObjectHideFlags: 0
