@@ -9,6 +9,7 @@ public class MenuTourellesInteraction : MonoBehaviour
 {
 
     [SerializeField] private GameObject joueur;
+    [SerializeField] private HoverTourelle hoverTourelle;
 
     private GameObject tourelle;
 
@@ -23,6 +24,16 @@ public class MenuTourellesInteraction : MonoBehaviour
         {
             Debug.Log("GetUp PrimaryIndexTrigger");
             tourelle.transform.SetParent(null);
+        }
+        if(OVRInput.GetDown(OVRInput.Button.SecondaryHandTrigger))
+        {
+            Debug.Log($"GetDown SecondaryHandTrigger");
+            hoverTourelle.AppliquerZoneValide();
+        }
+        if(OVRInput.GetUp(OVRInput.Button.SecondaryHandTrigger))
+        {
+            Debug.Log($"GetUp SecondaryHandTrigger");
+            hoverTourelle.RetirerZoneValide();
         }
     }
 }
