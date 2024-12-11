@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fc1e6058c23354ca6c2403687bd68f, type: 3}
   m_Name: Level5Tower
   m_EditorClassIdentifier: 
-  fireCooldown: 5
+  fireCooldown: 7
   bulletsPerShot: 4
   bullet: {fileID: 1040609200125065397, guid: 11511161375f28c45b9b9a0f6474a2c3, type: 3}
   rotateSpeed: 5
