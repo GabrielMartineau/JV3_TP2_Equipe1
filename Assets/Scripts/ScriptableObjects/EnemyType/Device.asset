@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
   m_Name: Device
   m_EditorClassIdentifier: 
-  speed: 0.375
+  speed: 0.3
   maxHP: 20
   aiMoveType: 0
   score: 5

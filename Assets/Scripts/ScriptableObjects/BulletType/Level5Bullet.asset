@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65775cb6dd2e1db4d9b13e1f656200f0, type: 3}
   m_Name: Level5Bullet
   m_EditorClassIdentifier: 
-  damage: 0.5
+  damage: 1.5
   moveSpeed: 1
-  rotateSpeed: 0.5
+  rotateSpeed: 1
