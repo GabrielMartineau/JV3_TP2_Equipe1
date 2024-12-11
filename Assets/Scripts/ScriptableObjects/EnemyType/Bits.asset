@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
-  m_Name: HackerPlus
+  m_Name: Bits
   m_EditorClassIdentifier: 
-  speed: 0.25
-  maxHP: 80
-  aiMoveType: 3
-  score: 10
+  speed: 0.5
+  maxHP: 15
+  aiMoveType: 2
+  score: 5

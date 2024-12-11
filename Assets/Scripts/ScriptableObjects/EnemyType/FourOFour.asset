@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1410f7d285e57854f9facf535f6ae49d, type: 3}
-  m_Name: DevicePlus
+  m_Name: FourOFour
   m_EditorClassIdentifier: 
-  speed: 0.425
-  maxHP: 25
-  aiMoveType: 0
-  score: 7
+  speed: 0.25
+  maxHP: 80
+  aiMoveType: 3
+  score: 10

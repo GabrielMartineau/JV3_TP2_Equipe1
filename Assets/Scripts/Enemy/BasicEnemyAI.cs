@@ -21,6 +21,7 @@ public class BasicEnemyAI : MonoBehaviour
     public GestionnaireVagues waveManager;
     public GestionnaireScore scoreManager;
     public bool isAlive;
+    [SerializeField] private Trojan deathEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,9 +43,6 @@ public class BasicEnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
-        
         if(isAlive)
         {
             Vector3 finalMove = Vector3.zero;
@@ -186,6 +184,7 @@ public class BasicEnemyAI : MonoBehaviour
         Destroy(collider);
         Destroy(model);
         scoreManager.EnemyScore(enemy.score);
+        if(deathEffect != null) deathEffect.OnDeath();
         waveManager.VerifVagueTermine();
         Invoke("DestroySelf", 3f);
     }
