@@ -9,6 +9,9 @@ public class SpawnerPointGenerator : MonoBehaviour
       [SerializeField] private float minDistance = 2f;
       [SerializeField] private float maxDistance = 5f;
       [SerializeField] private float maxHeight = 0f;
+ [SerializeField] private GameObject spawner;
+
+
 
 private void Awake()
   {
@@ -24,11 +27,10 @@ private void Awake()
     {
         for (int i = 0; i < numSpawnerPoints; i++)
             {
-        GameObject spawnerPoint = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        GameObject spawnerPoint = spawner;
         spawnerPoint.name = "SpawnerPoint" + i;
         spawnerPoint.transform.position = GetRandomPosition(startPosition);
         spawnerPoint.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        spawnerPoint.GetComponent<Renderer>().material.color = Color.green;
     }
     }
 

@@ -3399,10 +3399,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce96ea9bac75be4fb47385b76f5b5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSpawnerPoints: 5
+  numSpawnerPoints: 2
   minDistance: 2
   maxDistance: 5
   maxHeight: 2
+  spawner: {fileID: 8179616075558054149, guid: 4b02b95470452ff44ac14232d0c8d75d, type: 3}
 --- !u!4 &1576548912
 Transform:
   m_ObjectHideFlags: 0
