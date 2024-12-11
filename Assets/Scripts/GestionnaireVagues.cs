@@ -20,7 +20,7 @@ public class GestionnaireVagues : MonoBehaviour
         waveOver = false;
         so_infosNiveaux.ennemisRestants = 0;
 
-        Invoke("DémarrerSpawners", 15f);
+        Invoke("DemarrerSpawners", 15f);
 
         ennemis.name = "Enemies";
     }
