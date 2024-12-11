@@ -4996,7 +4996,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 2100000, guid: f5ae5922cb284ef4a8c518d2cda18e9f, type: 2}
+  - {fileID: 2100000, guid: a1fc6b0b2c2855d4b8be0d7daaf05a31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5129,7 +5129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 281ac94b-53dd-4edb-b197-acfe142085a5
+  instanceId: da9b85b1-1557-4737-979e-8a3da6aaee5b
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
@@ -10217,7 +10217,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 2100000, guid: f5ae5922cb284ef4a8c518d2cda18e9f, type: 2}
+  - {fileID: 2100000, guid: a1fc6b0b2c2855d4b8be0d7daaf05a31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15234,7 +15234,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 2100000, guid: f5ae5922cb284ef4a8c518d2cda18e9f, type: 2}
+  - {fileID: 2100000, guid: a1fc6b0b2c2855d4b8be0d7daaf05a31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15340,7 +15340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: f52521c0-bb2b-4408-a69a-e1a1750deaa6
+  instanceId: f7a380ac-709e-4755-9915-60679f9337ba
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -20463,7 +20463,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 2100000, guid: f5ae5922cb284ef4a8c518d2cda18e9f, type: 2}
+  - {fileID: 2100000, guid: a1fc6b0b2c2855d4b8be0d7daaf05a31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
