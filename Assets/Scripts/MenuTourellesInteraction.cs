@@ -13,6 +13,15 @@ public class MenuTourellesInteraction : MonoBehaviour
 
     private GameObject tourelle;
 
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    private void Start()
+    {
+        joueur = transform.parent.parent.parent.GetComponentInChildren<OVRManager>().gameObject;
+    }
+
     public void SelectionMenuTourelles(GameObject prefabTourelle){
         tourelle = Instantiate(prefabTourelle, prefabTourelle.transform.parent = joueur.transform);
     } 

@@ -6,8 +6,8 @@ public class EnemySpawnpoint : MonoBehaviour
 {
     [SerializeField] private InfosNiveaux levelInfo;
 
-    [SerializeField] private GameObject objective;
-    [SerializeField] private Transform enemyParent;
+    public GameObject objective;
+    public Transform enemyParent;
     [SerializeField] private List<GameObject> enemies;
 
     public GestionnaireScore scoreManager;

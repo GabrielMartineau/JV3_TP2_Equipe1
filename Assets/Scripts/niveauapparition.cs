@@ -10,6 +10,7 @@ public class niveauapparition : MonoBehaviour
 [SerializeField] private Transform rayStartPoint;
 [SerializeField] private float rayLength = 8f;
 [SerializeField] private MRUKAnchor.SceneLabels labelFilter;
+[SerializeField] private GameObject joueur;
 private bool levelSpawned = false;
 
   private void Awake()
