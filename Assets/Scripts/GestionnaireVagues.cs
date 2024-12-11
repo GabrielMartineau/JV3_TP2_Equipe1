@@ -8,6 +8,7 @@ using UnityEngine;
 public class GestionnaireVagues : MonoBehaviour
 {  
     [SerializeField] private InfosNiveaux so_infosNiveaux;
+    [SerializeField] private InfosNomScene so_infosNomScene;
     [SerializeField] private GestionnaireScore gestionnaireScore;
     [SerializeField] private GestionnaireScene gestionnaireScene;
     [SerializeField] private GameObject ennemis;
@@ -97,7 +98,7 @@ public class GestionnaireVagues : MonoBehaviour
     {
         if(EnemyCheck())
         {
-            gestionnaireScene.ChangeScene("Niveau2");
+            gestionnaireScene.ChangeScene(so_infosNomScene.nomProchaineScene);
         }
         else
         {

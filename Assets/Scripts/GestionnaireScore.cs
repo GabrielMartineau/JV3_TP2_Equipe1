@@ -13,9 +13,12 @@ public class GestionnaireScore : MonoBehaviour
     private TMP_Text champVague;
 
     void Start(){
-        so_infosNiveaux.score = 0;
         so_infosNiveaux.vague = 1;
         UpdateText();
+    }
+
+    public void ResetScore(){
+        so_infosNiveaux.score = 0;
     }
 
     public void EnemyScore(int nombreScore)
