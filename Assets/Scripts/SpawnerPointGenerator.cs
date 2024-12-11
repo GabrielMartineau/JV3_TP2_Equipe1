@@ -30,7 +30,7 @@ private void Awake()
         GameObject spawnerPoint = Instantiate(spawner);
         spawnerPoint.name = "SpawnerPoint" + i;
         spawnerPoint.transform.position = GetRandomPosition(startPosition);
-        spawnerPoint.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        spawnerPoint.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
     }
     }
 
