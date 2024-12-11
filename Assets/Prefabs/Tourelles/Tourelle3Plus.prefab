@@ -5447,7 +5447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5c57cad5e22794bbcf42025e5c2a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerType: {fileID: 11400000, guid: a5b57f248d874f544a8047c91df697e7, type: 2}
+  towerType: {fileID: 11400000, guid: c49434678bcbf434fa4ecfe13e7419ee, type: 2}
   bulletSpawnpoints:
   - {fileID: 730429757539105683}
   - {fileID: 323390135595451206}
